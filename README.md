@@ -4,8 +4,10 @@
 
 Aegis-Cam is a passive, multi-modal AI pipeline that acts as a continuous digital dashcam auditor. It identifies high-speed infrastructure hazards (specifically sudden underpass glare/washout zones) via edge-device video analysis and autonomously dispatches legally structured civic escalations using an agentic AI workflow. 
 
-🔗 **Live Deployment (GCP):** https://aegis-cam-spatial-telemetry-256478858055.asia-southeast1.run.app
-🎥 **Demo Video (Optional but recommended):** https://drive.google.com/file/d/1Oxlqs1gO3jYCVwnzRJXuwCjlcs8YfzTJ/view?usp=drive_link
+🔗 **Live Deployment (GCP):** 
+https://aegis-cam-spatial-telemetry-256478858055.asia-southeast1.run.app
+
+🎥 **Demo Video :** https://drive.google.com/file/d/1Oxlqs1gO3jYCVwnzRJXuwCjlcs8YfzTJ/view?usp=drive_link
 
 ## 🏗️ System Architecture (Agentic Depth)
 This project compresses a massive civic data pipeline into a single, scalable agentic workflow powered entirely by Google's foundational models.
