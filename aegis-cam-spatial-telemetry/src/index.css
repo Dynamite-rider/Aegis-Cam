@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-headline: "Hanken Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-aegis-bg: #f4f6f4;
+  --color-aegis-surface: #ffffff;
+  --color-aegis-on-surface: #191c1b;
+  --color-aegis-on-surface-variant: #414844;
+  
+  --color-aegis-primary: #012d1d;
+  --color-aegis-primary-container: #1b4332;
+  --color-aegis-on-primary-container: #86af99;
+  
+  --color-aegis-secondary: #2c694e;
+  --color-aegis-secondary-container: #aeeecb;
+  --color-aegis-on-secondary-container: #316e52;
+  
+  --color-aegis-error: #ba1a1a;
+  --color-aegis-error-container: #ffdad6;
+  
+  --color-aegis-container: #eceeec;
+  --color-aegis-container-low: #f2f4f2;
+  --color-aegis-container-high: #e6e9e7;
+  --color-aegis-container-highest: #e1e3e1;
+
+  --color-warning-amber: #fbbf24;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-aegis-bg);
+    color: var(--color-aegis-on-surface);
+    font-family: var(--font-sans);
+  }
+}
+
+/* Tactile Modernism Ambient Shadow */
+.tactile-shadow {
+  box-shadow: 0 8px 24px rgba(1, 45, 29, 0.08);
+}
+
+.tactile-shadow-hover:hover {
+  box-shadow: 0 12px 32px rgba(1, 45, 29, 0.12);
+}
+
+/* Custom map design grid overlay helper */
+.map-grid-bg {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(1, 45, 29, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(1, 45, 29, 0.03) 1px, transparent 1px);
+}
+
+/* 3D Road Driving Perspective Simulation */
+@keyframes road-stripe-animation {
+  0% {
+    transform: translate3d(-50%, -100px, 0) scale(0.1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(-50%, 150px, 0) scale(2.5);
+    opacity: 0;
+  }
+}
+
+.animate-road-stripe {
+  animation: road-stripe-animation 1.2s infinite linear;
+}
+
+@keyframes side-marker-left {
+  0% {
+    transform: translate3d(-15px, -60px, 0) scale(0.1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(-180px, 120px, 0) scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes side-marker-right {
+  0% {
+    transform: translate3d(15px, -60px, 0) scale(0.1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(180px, 120px, 0) scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-side-left {
+  animation: side-marker-left 1.4s infinite linear;
+}
+
+.animate-side-right {
+  animation: side-marker-right 1.4s infinite linear;
+}
+
+@keyframes dash-pulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.animate-dash-pulse {
+  animation: dash-pulse 2s infinite ease-in-out;
+}
+

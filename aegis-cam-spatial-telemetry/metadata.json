@@ -1,0 +1,6 @@
+{
+  "name": "Aegis-Cam Spatial Telemetry",
+  "description": "Passive web-based dashcam detecting infrastructure hazards via edge video analysis and autonomously dispatching civic complaints using Google Gemini.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
